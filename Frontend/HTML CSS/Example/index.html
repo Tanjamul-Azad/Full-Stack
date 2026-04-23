@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Registration Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="top-strip">
+      <nav class="menu-left">
+        <a href="#">Dashboard</a>
+        <a href="#">Courses</a>
+        <a href="#">Notices</a>
+        <a href="#">Results</a>
+      </nav>
+
+      <nav class="menu-right">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </nav>
+    </div>
+
+    <div class="content-grid">
+      <aside class="left-panel">
+        <h2>Semesters</h2>
+
+        <div class="semester-list">
+          <div class="semester-item">Spring 2025</div>
+          <div class="semester-item">Fall 2024</div>
+          <div class="semester-item">Summer 2024</div>
+        </div>
+
+        <section class="notice-card">
+          <h3>Important Notice</h3>
+          <p>
+            Midterm exams will begin on April 10, 2025.
+            Students must bring their ID cards and check the schedule posted on the portal.
+          </p>
+          <button type="button">View Details</button>
+        </section>
+      </aside>
+
+      <main class="right-panel">
+        <section class="card registration-card">
+          <h2>Course Registration</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Code</th>
+                <th>Credit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Programming</td>
+                <td>CSE201</td>
+                <td>3.0</td>
+              </tr>
+              <tr>
+                <td>Data Structures</td>
+                <td>CSE202</td>
+                <td>3.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card form-card">
+          <h2>Sign Up Form</h2>
+
+          <form>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="Enter full name" />
+
+            <label for="student-id">Student ID</label>
+            <input id="student-id" type="text" placeholder="e.g. 011233001" />
+
+            <label for="email">UIU Email</label>
+            <input id="email" type="email" placeholder="name@students.uiu.ac.bd" />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" />
+
+            <button class="register-btn" type="submit">Register</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      &copy; 2025 United International University | Web Programming Midterm Makeup
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+:root {
+  --text: #1b2f5d;
+  --panel-bg: #eceff2;
+  --mint-start: #67cec8;
+  --mint-end: #9eb2e7;
+  --table-head-1: #c6691f;
+  --table-head-2: #bea18c;
+  --footer-1: #d56d1f;
+  --footer-2: #4aa34d;
+  --button-1: #1837ff;
+  --button-2: #f5cb0d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  background: #e4e4e4;
+  color: #1d1d1d;
+}
+
+.page-shell {
+  width: min(1220px, 94vw);
+  margin: 56px auto 24px;
+}
+
+.top-strip {
+  height: 20px;
+  background: #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.top-strip a {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.top-strip .menu-right a {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.content-grid {
+  display: flex;
+  min-height: 510px;
+  background: #f0f0f0;
+}
+
+.left-panel {
+  width: 365px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, var(--mint-start) 0%, var(--mint-end) 100%);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 9px;
+}
+
+.left-panel h2 {
+  margin: 0 0 8px;
+  color: #17314e;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.semester-list {
+  display: grid;
+  gap: 10px;
+}
+
+.semester-item {
+  height: 44px;
+  background: rgba(255, 255, 255, 0.34);
+  border-radius: 7px;
+  padding: 9px 10px;
+  font-size: 30px;
+  color: #1f4555;
+  font-weight: 500;
+}
+
+.notice-card {
+  margin-top: 12px;
+  background: #efefef;
+  border-radius: 11px;
+  padding: 10px 12px 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.notice-card h3 {
+  margin: 0;
+  color: #163464;
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.notice-card p {
+  margin: 10px 0 12px;
+  color: #353a45;
+  font-size: 31px;
+  line-height: 1.12;
+}
+
+.notice-card button,
+.register-btn {
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--button-1), var(--button-2));
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.notice-card button {
+  height: 41px;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 8px 7px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.card {
+  background: var(--panel-bg);
+  border-radius: 0 0 10px 10px;
+  padding: 6px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  color: #183969;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.registration-card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 31px;
+  table-layout: fixed;
+}
+
+.registration-card th,
+.registration-card td {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 6px 10px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.registration-card th {
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--table-head-1), var(--table-head-2));
+}
+
+.registration-card td {
+  color: #182636;
+  background: linear-gradient(90deg, rgba(196, 115, 45, 0.95), rgba(189, 161, 136, 0.75));
+}
+
+.form-card form {
+  display: grid;
+  gap: 6px;
+}
+
+.form-card label {
+  color: #252525;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.form-card input {
+  width: 100%;
+  height: 47px;
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  padding: 0 14px;
+  font-size: 22px;
+  outline: none;
+}
+
+.form-card input::placeholder {
+  color: #767676;
+}
+
+.form-card input:focus {
+  border-color: #5d8ec6;
+  box-shadow: 0 0 0 2px rgba(93, 142, 198, 0.2);
+}
+
+.register-btn {
+  width: 125px;
+  height: 38px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 3px;
+  height: 48px;
+  background: linear-gradient(90deg, var(--footer-1), #7f870f, var(--footer-2), #81b49d);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 10px;
+}
+
+@media (max-width: 1100px) {
+  .top-strip {
+    font-size: 20px;
+    height: 26px;
+  }
+
+  .content-grid {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .left-panel h2 {
+    font-size: 28px;
+  }
+
+  .semester-item {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .notice-card h3 {
+    font-size: 30px;
+  }
+
+  .notice-card p {
+    font-size: 19px;
+    line-height: 1.25;
+  }
+
+  .notice-card button {
+    font-size: 18px;
+    height: 38px;
+  }
+
+  .card h2 {
+    font-size: 30px;
+  }
+
+  .registration-card table {
+    font-size: 20px;
+  }
+
+  .form-card label {
+    font-size: 24px;
+  }
+
+  .form-card input {
+    font-size: 16px;
+    height: 44px;
+  }
+
+  .register-btn {
+    font-size: 18px;
+    height: 36px;
+  }
+
+  footer {
+    font-size: 17px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
