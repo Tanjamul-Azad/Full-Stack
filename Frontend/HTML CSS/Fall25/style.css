@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#heading{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+
+#logo{
+    color: #3F46A4;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+#rightHead{
+    display: flex;
+    gap:50px;
+    color: grey;
+    margin-right: 10px;
+
+}
+
+#Screen{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px ;
+    padding: 20px 20px;
+    background-color:#ECEFF4 ;
+   
+    
+}
+
+#leftScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:30px; 
+   width: 60vw;
+   height: 60vh;
+   background-color: #EFF6FE;
+   padding: 10px 20px;
+
+
+}
+
+.button{
+    display: flex;
+    gap:20px;
+    width: 500px;
+    height: 30px;
+    
+    
+}
+
+.button button{
+    padding: 10px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+#button1 button{
+    background-color: #3F46A4;
+    color: white;
+}
+
+#button2 button{
+    background-color: #2A8BB1;
+    color: white;
+}
+
+#RightScreen{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 10px;
+    padding: 10px 20px;
+  
+
+}
+
+#RightScreen form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#b1{
+    background-color: #3F46A4;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+
+input{
+    padding:8px 5px;
+}
+
+
