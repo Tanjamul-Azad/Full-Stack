@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.do-flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+#navbar{
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.dp{
+    background-color: #536ffe;
+    color:white;
+    padding:13px;
+    border-radius: 100%;
+    width: 15px;
+}
+#Prog80{
+    background-color: blue;
+    width: 30%;
+    height: 7px;
+    border-radius: 10px;
+}
+
+#Prog7{
+     background-color: #f93536;
+    width: 20%;
+    height: 7px;
+    border-radius: 10px;
+
+}
+
+#mainSec{
+    
+    background-color: #EBEBEB;
+    padding: 20px;
+    margin: 12px;
+    
+
+}
+.bg-white-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.btn{
+    padding: 8px 16 px;
+    border-radius: 15px;
+    border: none;
+}
